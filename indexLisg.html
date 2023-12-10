@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header, footer {
+            background-image: url(https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D);
+            margin: 0;
+  padding: 0;
+
+            text-align: left;
+        }
+
+        main {
+            margin: 0px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            background-color: #2b2d3b;
+        }
+
+        .post {
+            background-color: black;
+            color: whitesmoke;
+            padding: 20px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .post img {
+            width: 150px; /* Set the desired width */
+            height: 150px; /* Set the desired height */
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .post-content {
+            flex-grow: 1;
+        }
+
+        footer {
+            background-color: black;
+            padding: 10px;
+            text-align: left;
+            color: white;
+        }
+
+        .footer-columns {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .footer-column {
+            flex: 30%; /* Adjust the width as needed */
+            margin: 20px;
+        }
+        #menu1 {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+}
+
+/* ... (rest of your CSS) */
+
+#menu1 ul{
+ position: relative;
+ display: block;
+ margin: 0px;
+ padding: 0px;
+ width: 100%;
+ height: auto;
+ list-style: none;
+}
+
+  #menu1 > ul::after{
+ display: block;
+ width: 100%;
+ height: 0px;
+ clear: both;
+ content: " ";
+}
+#menu1 ul li{
+ position: relative;
+ display: block;
+ float: left;
+ width: auto;
+ height: auto;
+}
+#menu1 ul li a{
+ display: block;
+ padding: 9px 25px 0px 25px;
+ font-size: 14px;
+ line-height: 1.3em;
+ text-decoration: none;
+ font-weight: bold;
+ text-transform: uppercase;
+ height: 36px;
+ box-sizing: border-box;
+ color: white;
+}
+#menu1 ul li ul{
+ position: absolute;
+ top: 36px;
+ left: 0px;
+ display: none;
+ width: 200px;
+ background: transparent;
+}
+#menu1 ul li:hover ul{
+ display: block;
+}
+#menu1 ul li ul li{
+ float: none;
+ width: 100%;
+}
+#menu1 ul li ul li a{
+ display: block;
+ text-transform: none;
+ height: auto;
+ padding: 7px 25px;
+ width: 100%;
+ box-sizing: border-box;
+ border-top: 1px solid #ffffff;
+ color: white;
+}
+#menu1 ul li ul li:first-child a{
+ border-top: 0px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="file:///C:/Users/dbere/Downloads/%D0%94%D0%BE%D0%B4%D0%B0%D0%B9%D1%82%D0%B5%20%D0%BF%D1%96%D0%B4%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D0%BA-PhotoRoom%20(1).png"
+        width="200" draggable="false" alt="Logo">
+        <nav id="menu1">
+ <ul>
+ <li><a href="#m1">MENU</a>
+ <ul>
+ <li><a href="file:///C:/Users/dbere/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/IT%20STEP/HTML&CSS/final%20project/index4.html">Home</a></li>
+ <li><a href="file:///C:/Users/dbere/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/IT%20STEP/HTML&CSS/indexLisg.html">Most famous actors</a></li>
+ <li><a href="#m1_3">Menu</a></li>
+ <li><a href="#m1_4">Menu</a></li>
+ <li><a href="#m1_5">Menu</a></li>
+ </ul>
+ </li>
+
+ </ul>
+</nav>
+    </header>
+    <main>
+        <div class="post">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTg0MDc3ODUwOV5BMl5BanBnXkFtZTcwMTk2NjY4Nw@@._V1_FMjpg_UX1000_.jpg"
+            alt="Card image cap">
+            <div class="post-content">
+                <h3>Matthew McConaughey</h3>
+                <p>
+                    Matthew David McConaughey is an American actor. He had his breakout role with a supporting performance in the coming-of-age comedy Dazed and Confused (1993).After a number of supporting roles, his first success as a leading man came in the legal drama A Time to Kill (1996). His career progressed with lead roles in the science fiction film Contact (1997), the historical drama Amistad (1997), and the war film U-571 (2000).
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Matthew_McConaughey">Read more</a>
+            </div>
+        </div>
+        <div class="post">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Anne_Hathaway_at_the_2007_Deauville_American_Film_Festival-01A.jpg/170px-Anne_Hathaway_at_the_2007_Deauville_American_Film_Festival-01A.jpg"
+            alt="Card image cap" width="100px">
+            <div class="post-content">
+                <h3>Anne Hathaway</h3>
+                <p>
+                    Anne Jacqueline Hathaway (born November 12, 1982) is an American actress. Her accolades include an Academy Award, a British Academy Film Award, a Golden Globe Award, and a Primetime Emmy Award. Her films have grossed over $6.8 billion worldwide, and she appeared on the Forbes Celebrity 100 list in 2009. She was among the world's highest-paid actresses in 2015.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Anne_Hathaway">Read more</a>
+            </div>
+        </div>
+        <div class="post">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Damon_cropped.jpg/248px-Damon_cropped.jpg">
+            <div class="post-content">
+                <h3>Matt Damon</h3>
+                <p>
+                    Matthew Paige Damon is an American actor, film producer, and screenwriter. Ranked among Forbes' most bankable stars,the films in which he has appeared have collectively earned over $3.88 billion at the North American box office, making him one of the highest-grossing actors of all time.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Matt_Damon">Read more</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <div>
+                    <img src="file:///C:/Users/dbere/Downloads/%D0%94%D0%BE%D0%B4%D0%B0%D0%B9%D1%82%D0%B5%20%D0%BF%D1%96%D0%B4%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BE%D0%BA-PhotoRoom%20(1).png"
+                    alt="Logo" width="250">
+                </div>
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h3>About</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                            Justo nec ultrices dui sapien eget mi proin.
+                        </p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact me</h3>
+                        <p>
+                            If you are interested in working with me
+                            or just want to say hello simply write on
+                            email.
+                            <br><strong>Email:
+                            <a href="#">contact@mail.com</a></strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <center>
+                <small>Copyright &copy; 2025 Rob Smith Blog</small>
+            </center>
+        </div>
+    </footer>
+</body>
+</html>
